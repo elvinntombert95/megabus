@@ -16,7 +16,7 @@ body {
 		padding:12px 20px 0px 20px;
 		color:#fff;
 		border:0;
-		font-size:2.5em;
+		font-size: 1.5em;
 		font-weight:bold;
 		cursor:pointer;
 		outline:none;
@@ -71,9 +71,9 @@ body {
 nav {
 	position: fixed;
     z-index: 10000;
-    width: 20%;
+    width: 270px;
     height: 100%;
-    background: #004B80;
+    background: #004b72;
     text-align: center;
 }
 
@@ -103,11 +103,11 @@ nav ul a li:hover {
 
 /*PAGE ONE*/
 .page-one {
-	background: url(../img/Paris.jpg) no-repeat;
+	background: url(../img/paris.jpg) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
-	height: 110%;
+	transition:1s;
 	    float: left;
     	clear: both;
 }
@@ -123,7 +123,7 @@ nav ul a li:hover {
 		height: 530px;
 		border: 9px solid #ffcc00;
 		padding: 15px;
-		margin: 100px 170px;
+		margin: 20%;
 	}
 	.rechercher h1 {
 		font-size: 22px;
@@ -180,11 +180,19 @@ nav ul a li:hover {
 		margin: 140px 0px;
 		color: ghostwhite;
 	}
+
+	.about-resp {
+		width: 50%;
+		float: right;
+		margin: 140px 0px;
+		color: ghostwhite;
+	}
+
 	.about h1 {
-		font-size: 28px;
-    	text-align: left;
-    	font-size: 31px;
-    	text-transform: uppercase;
+	    font-size: 25px;
+	    text-transform: uppercase;
+	    line-height: 1.4;
+	    letter-spacing: 2px;
 	}
 	.about button {
 		font-size: 12px;
@@ -195,16 +203,17 @@ nav ul a li:hover {
 		color: #004b72;
 		font-weight: bold;
 	}
+
+	.about article {
+		font-size: 25px;
+		margin-bottom: 70px;
+	}
+
 	.bordure {
 		border: 2px solid #ffcc00;
 	    width: 80%;
 		margin: 45px 0;
 	}
-	.about article {
-		font-size: 35px;
-		margin-bottom: 70px;
-	}
-
 
 
 /*PAGE TWO*/
@@ -216,10 +225,11 @@ nav ul a li:hover {
     	clear: both;
 }
 	.page-two h1 {
-		font-size: 60px;
-		text-align: center;
-		padding: 65px 0 50px 0;
-		color: #013651;
+	    font-size: 40px;
+	    letter-spacing: 13px;
+	    text-align: center;
+	    padding: 65px 0 50px 0;
+	    color: #013651;
 	}
 	.page-two p {
 		font-size: 18px;
@@ -230,7 +240,7 @@ nav ul a li:hover {
 		.bloc-p1 {
 		    width: 70%;
     		margin: 30px auto 100px auto;
-			float: ;
+
 		}
 		.bloc-p1 img {
 		    width: 500px;
@@ -238,12 +248,16 @@ nav ul a li:hover {
 			display: block;
 		}
 
+		.bloc-p1 em {
+			font-weight: bold;
+		}
+
 
 /*PAGE THREE*/
 .page-three {
 	background-size: cover;
 	width: 100%;
-	height: 100vh;
+	height: 93vh;
 	position: relative;
 	    float: left;
     	clear: both;
@@ -255,6 +269,34 @@ nav ul a li:hover {
 		background-size: cover;
 		float: left;
 	}
+	.text-none {
+		display: none;
+		width: 90%;
+		margin: auto;
+	}
+		.text-none h2{
+			text-transform: uppercase;
+			text-align: center;
+			color: white;
+			font-size: 35px;
+			padding-top: 50px;
+			line-height: 4;
+			letter-spacing: 5px;
+		}
+			.text-none button {
+				display: block;
+				margin: auto;
+				text-align:center;
+				font-size: 12px;
+				background: #ffcc00;
+				padding: 20px 100px;
+				border: none;
+				border-radius: 10px;
+				color: #004b72;
+				font-weight: bold;
+				-webkit-appearance: none;
+			}
+
 	.block2 {
 		width: 25%;
 		height: 100vh;
@@ -265,7 +307,7 @@ nav ul a li:hover {
 			text-transform: uppercase;
 			text-align: center;
 			color: white;
-			font-size: 35px;
+			font-size: 30px;
 			padding-top: 50px;
 			line-height: 4;
 		}
@@ -312,7 +354,7 @@ nav ul a li:hover {
 	/* Image Box Style */
 	#mainwrapper .box {
 		cursor: pointer;
-		height: 34vh;
+		height: 31.1%;
 		float: left;
 		position: relative;
 		overflow: hidden;
@@ -344,13 +386,14 @@ nav ul a li:hover {
 	}
 
 	/** Caption 2: Full Width & Height **/
-	#mainwrapper .box .full-caption {
-		width: 91%;
-		height: 77%;	
-		top: -200px;
-		text-align: center;
-		padding: 15px;
-	}
+#mainwrapper .box .full-caption {
+    width: 93%;
+    position: absolute;
+    height: 170px;
+    top: -200px;
+    text-align: center;
+    padding: 15px;
+}
 
 	/** Full Caption :hover Behaviour **/
 	#mainwrapper .box:hover .full-caption {
@@ -387,17 +430,18 @@ nav ul a li:hover {
 	}
 
 	.container h1 {
-		font-size: 60px;
+		font-size: 40px;
 	}
 
 	.container p {
-		font-size: 25px;
-		color: #004b72;
+	    font-size: 21px;
+	    color: #004b72;
+	    line-height: 1.5;
 	}
 
 	.container button {
-		font-size: 25px;
-	    background: #ffcc00;
+		font-size: 20px;
+   	    background: #ffcc00;
 	    padding: 20px 100px;
 	    border: none;
 	    border-radius: 10px;
@@ -421,9 +465,11 @@ nav ul a li:hover {
 		text-align: center;
 	}
 	.mega h1 {
-		padding-top: 8%;
-    	color: white;
-    	font-size: 80px;
+	    padding: 5% 0;
+	    line-height: 2;
+	    color: white;
+	    letter-spacing: 10px;
+	    font-size: 50px;
 	}
 
 	.plan-a {
@@ -639,7 +685,7 @@ nav ul a li:hover {
 }
 
 .page-six h1 {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     padding-top: 100px;
     color: #004b72;
@@ -655,9 +701,9 @@ nav ul a li:hover {
 		margin-left: 170px;
 	}
 	.paragraphe p {
-		font-size: 25px;
-    	line-height: 2;
-    	color: #004b72;
+	    font-size: 20px;
+	    line-height: 2;
+	    color: #004b72;
 	}
 	.paragraphe b {
 		text-transform: uppercase;
@@ -669,49 +715,620 @@ nav ul a li:hover {
 	}
 
 	.page-six ul li img {
-		width: 264px;
-		height: 78px;
+	    width: 245px;
+   		height: 70px;
 	}
 
 footer {
+	text-align: center;
 	background: #013651;
+	margin: auto;
 	width: 100%;
-	height: 400px;
 		float: left;
 		clear: both;
 }
 
-footer article {
-	display: inline-block;
+footer section {
+	margin: auto;
+	width: 100%;
 }
 
-footer h1 {
-	    font-size: 40px;
+footer section article {
+	display: inline-table;
+    padding: 3% 5%;
+}
+
+footer h3 {
+	font-size: 25px;
     color: white;
     margin-bottom: 40px;
 }
 
-.connect {
-	margin: 0 200px;
+footer img {
+	width: 40px;
+	margin: 0 15px;
 }
 
-.connect img {
-	width: 50px;
-	margin-right: 30px;
-}
-
-.connect ul li {
-	display: inline-block;
-}
-
-.logo-footer {
-	    position: relative;
-    top: 80px;
-    left: 100px;
-}
-
-.link ul li{
-	font-size: 20px;
+footer ul li,footer p{
+	font-size: 15px;
 	color: white;
-	margin-bottom: 5px;
+	margin: 10px 0px;
+}
+
+
+
+
+/*--------------------------------------------RESPONSIVE-------------------------------------------------*/
+@media screen and (min-width: 1370px) and (max-width: 9000px) {
+	main {
+		width: 1180px;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.logo {
+	    width: 95px;
+	    padding: 15px 0;
+	}
+
+	/*PAGE ONE*/
+	.page-one {
+		background: url(../img/paris2.jpg) no-repeat;
+		transition:1s;
+		background-size: cover;
+		background-attachment: fixed;
+		text-align: center;
+	}
+
+	.block-search,.about {
+	    width: 100%;
+	    margin: auto;
+	}
+
+	.about {
+	    padding-top: 130px;
+	}
+
+	.rechercher {
+	    float: none;
+	    width: 60%;
+	    height: auto;
+	    padding: 15px;
+	    margin: 50px auto;
+	}
+	.rechercher input[type="text"],.rechercher input[type="date"] {
+	    width: 90%;
+	}
+
+	.rechercher input[type="number"] {
+	    margin: 36px 5% 35px 5%;
+	    display: inline-block;
+	    padding: 4%;
+	    border: 2px solid #ffcc00;
+	}
+
+	.rechercher input[type="radio"] {
+		margin: 35px 3%;
+	    font-size: 20px;
+	}
+
+	.bordure {
+	    margin: 45px auto;
+	}
+
+	.about button {
+		display: none;
+	}
+	.about h1 {
+	    line-height: 1.5;
+        letter-spacing: 5px;
+	    font-size: 25px;
+	    width: 90%;
+   		margin: auto;
+	}
+		.about article {
+		    width: 90%;
+	    	margin: auto;
+		    font-size: 20px;
+		    margin-bottom: 40px;
+		    /* font-weight: bolder; */
+		    letter-spacing: 7px;
+		}
+
+
+	/*PAGE TWO*/
+	.page-two h1 {
+	    font-size: 40px;
+	    padding: 65px 0 50px 0;
+	}
+
+	.bloc-p1 {
+	    width: 80%;
+	}
+
+	.bloc-p1 img {
+	    width: 90%;
+	}
+
+	/*PAGE THREE*/
+	.page-three {
+	    width: 100%;
+	    background: #004b72;
+	}
+
+	.block1 {
+		display: none;
+	    width: 100%;
+	    height: 400px;
+	    float: left;
+	}
+
+	.block2 {
+	    height: auto;
+	}
+	.block2,.block3 {
+		width: 50%;
+	}
+
+	.block2 h2 {
+	    font-size: 25px;
+	    letter-spacing: 3;
+	    padding: 50px 0;
+	    line-height: 3;
+	    width: 90%;
+	    margin: auto;
+	}
+
+	/*PAGE FOUR*/
+	.container {
+	    width: 90%;
+	    margin-top: 0;
+	    margin-left: 0;
+	    color: #004b72;
+	    margin: 90px auto;
+	    text-align: center;
+	}
+
+	.container h1 {
+	    font-size: 30px;
+	    width: 90%;
+	    margin: -30px auto 0;
+	}
+
+	.container p {
+	    font-size: 17px;
+	    line-height: 2;
+	    width: 90%;
+	    margin: auto;
+	}
+
+	.container button {
+	    font-size: 17px;
+	    margin: 100px auto 0;
+	}
+
+	.border {
+	    width: 80%;
+	    margin: 50px auto;
+	}
+
+	/*PAGE FIVE*/
+	.mega {
+	    height: auto;
+	    text-align: center;
+	}
+	.mega h1 {
+	    padding: 3%;
+	    color: white;
+	    font-size: 35px;
+	    line-height: 2;
+	}
+
+	.plan-a, .plan-b {
+	    width: 100%;
+	    float: none;
+	}
+
+	#mainwrapper2 h1,#mainwrapper2 h2,#mainwrapper2 h3,#mainwrapper2 h4, 
+	#mainwrapper2-float h1, #mainwrapper2-float h2, 
+	#mainwrapper2-float h3, #mainwrapper2-float h4 {
+	    font-size: 30px;
+	    letter-spacing: 3px;
+	}
+
+	#mainwrapper2-float p {
+	    font-size: 18px;
+	    letter-spacing: 3px;
+	}
+
+	/*PAGE SIX*/
+	.page-six h1 {
+	    font-size: 30px;
+	    padding-top: 70px;
+	}
+	.page-six ul li {
+	    display: inline-block;
+	    margin:50px 0px;
+	}
+	.page-six {
+		text-align: center;
+	}
+	.page-six ul li img {
+	    width: 200px;
+	    height: 60px;
+	    margin: 0 30px;
+	}
+
+	.paragraphe {
+		text-align: center;
+	    width: 100%;
+	    margin-left: 0;
+	}
+	.paragraphe p {
+	    width: 50%;
+	    font-size: 18px;
+	    margin: auto;
+    	text-align: center;
+	}
+
+	/*FOOTER*/
+	footer h3 {
+	    font-size: 16px;
+	    color: white;
+	    margin: 30px 0 40px;
+	}
+}
+
+
+@media screen and (max-width: 610px) {
+	.toggle-fl img {
+	    width: 30px;
+	}
+
+	.arrow {
+	    top: 30px;
+	}
+
+	.flag {
+	    position: absolute;
+	    top: 5px;
+	    right: 30px;
+	    padding: 20px 30px 0 0;
+	}
+
+	/*PAGE ONE*/
+	.about h1 {
+	    line-height: 1.5;
+	    letter-spacing: 5px;
+	    font-size: 20px;
+	    width: 90%;
+	    margin: auto;
+	}	
+
+	.about article {
+	    font-size: 15px;
+	    margin-bottom: 30px;
+	    font-weight: bolder;
+	}
+
+	/*PAGE TWO*/
+	.page-two h1 {
+	    font-size: 30px;
+	    padding: 65px 0 50px 0;
+	    letter-spacing: 3px;
+	    width: 95%;
+	    margin: auto;
+	}
+
+	.page-two p {
+	    font-size: 15px;
+	    text-align: justify;
+	    text-indent: 3em;
+	    line-height: 1.8;
+	}
+
+	/*PAGE FIVE*/
+	#mainwrapper2 h1,#mainwrapper2 h2,#mainwrapper2 h3,#mainwrapper2 h4, 
+	#mainwrapper2-float h1, #mainwrapper2-float h2, 
+	#mainwrapper2-float h3, #mainwrapper2-float h4 {
+		font-size: 25px;
+	    letter-spacing: 5px;
+	}
+
+	#mainwrapper2-float .box2 .fade-caption, #mainwrapper2-float .box2 .scale-caption, #mainwrapper2 .box2 .fade-caption {
+	    padding: 5% 0;
+	}
+
+	#mainwrapper h3 {
+	    padding: 10px 0 20px 0;
+	    font-size: 20px;
+	    letter-spacing: 5px;
+	}
+
+	/*PAGE SIX*/
+	.page-six ul li img {
+	    width: 170px;
+	    height: 50px;
+	    margin: 0 30px;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	.toggle-fl img {
+	    display: none;
+	}
+
+	.logo {
+	    padding: 15px 0;
+	    margin: auto;
+	    display: block;
+	}
+
+	/*PAGE ONE*/
+	.about {
+	    padding-top: 110px;
+	}
+	.rechercher input[type="radio"] {
+	    margin: 35px 0.5%;
+	    font-size: 20px;
+	}
+
+	.rechercher input[type="number"] {
+	    margin: 36px 2%;
+	    display: inline-block;
+	    padding: 4%;
+	    border: 2px solid #ffcc00;
+	}
+
+	.rechercher h1 {
+	    font-size: 20px;
+	    margin: 22px 0;
+	    letter-spacing: 3px;
+	}
+
+	.rechercher button {
+	    width: 100%;
+	    margin: auto;
+    	padding: 20px 2%;
+	}
+
+	.rechercher label {
+	    font-size: 15px;
+	}
+
+
+	/*PAGE THREE*/
+	.page-three {
+	    height: auto;
+	}
+
+	.text-none {
+		display: block;
+	}
+
+
+	.block1 {
+		height: auto;
+	    display: block;
+	}
+	.block2 {
+		display: none;
+	}
+
+	.block3 {
+	    height: auto;
+	}
+
+	#mainwrapper .box {
+	    height: 40%;
+	    width: 102%;
+	}
+
+	#mainwrapper p {
+	    line-height: 1.5;
+	}
+
+	.text-none h2 {
+	    font-size: 25px;
+	    padding-top: 50px;
+	    line-height: 2;
+	    letter-spacing: 5px;
+	}
+
+	.text-none button {
+	    display: block;
+	    width: 80%;
+	    margin: 50px auto;
+	    text-align: center;
+	    font-size: 12px;
+	    padding: 20px 2%;
+	}
+
+	/*PAGE FOUR*/
+	.container h1 {
+	    font-size: 25px;
+	}
+
+	.container p {
+	    font-size: 15px;
+	    line-height: 2;
+	}
+
+	.container button {
+	    font-size: 15px;
+	    width: 100%;
+	}
+
+	/*PAGE FIVE*/
+	.mega h1 {
+	    font-size: 25px;
+	}
+
+	#mainwrapper2 h1, #mainwrapper2 h2, #mainwrapper2 h3, #mainwrapper2 h4, 
+	#mainwrapper2-float h1, #mainwrapper2-float h2, #mainwrapper2-float h3, 
+	#mainwrapper2-float h4 {
+    	font-size: 20px;
+	}
+
+	#mainwrapper2 p {
+	    font-size: 18px;
+	}
+	#mainwrapper2-float p {
+	    padding: 65px 0px;
+	}
+
+	#mainwrapper2 p {
+		padding: 45px 0px;
+	}
+
+	/*PAGE SIX*/
+	.page-six h1 {
+	    font-size: 25px;
+	    padding-top: 70px;
+	}
+	.paragraphe p {
+	    width: 90%;
+	    font-size: 18px;
+	    margin: auto;
+	    text-align: center;
+	}
+	.bordure2 {
+	    width: 80%;
+	}
+
+	.page-six ul li img {
+	    width: 155px;
+	    height: 45px;
+	    margin: 0 10px;
+	}
+
+	footer section article {
+	    width: 80%;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.rechercher input[type="radio"] {
+	    margin: 35px 4%;
+	    font-size: 20px;
+	}
+
+	/*PAGE TWO*/
+	.page-two h1 {
+	    font-size: 20px;
+	    line-height: 1.4;
+	}
+	.page-two p {
+	    font-size: 14px;
+	    line-height: 1.8;
+	}
+
+	/*PAGE THREE*/
+	.text-none h2 {
+	    font-size: 20px;
+	    padding-top: 50px;
+	    line-height: 2;
+	    letter-spacing: 5px;
+	}
+
+	/*PAGE FOUR*/
+	.container h1 {
+	    font-size: 23px;
+	}
+
+	.container p {
+	    font-size: 14px;
+	    line-height: 2;
+	}
+
+	.container button {
+	    font-size: 13px;
+	}
+
+	/*PAGE FIVE*/
+	#mainwrapper2 .box2 {
+	    width: 100%;
+	    height: 225px;
+	}
+
+	/*PAGE SIX*/
+	.page-six h1 {
+	    font-size: 20px;
+	}
+
+	.bordure2 {
+	    margin: 40px auto;
+	}
+
+	.paragraphe p {
+	    font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.rechercher {
+	    width: 80%;
+	}
+
+	#mainwrapper .box {
+	    height: 45%;
+	    width: 102%;
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	.about h1 {
+	    letter-spacing: 5px;
+	    font-size: 15px;
+	}
+
+	.about article {
+	    font-size: 15px;
+	    margin-bottom: 30px;
+	    font-weight: initial;
+	    letter-spacing: 4px;
+	}
+
+	.rechercher h1 {
+	    font-size: 15px;
+	    margin: 20px 0;
+	}
+
+	.page-two h1 {
+	    font-size: 18px;
+	    line-height: 1.4;
+	}
+
+	.text-none h2 {
+	    font-size: 18px;
+	}
+
+	.mega h1 {
+	    font-size: 20px;
+	}
+
+	#mainwrapper2 h1, #mainwrapper2 h2, #mainwrapper2 h3, 
+	#mainwrapper2 h4, #mainwrapper2-float h1, #mainwrapper2-float h2, 
+	#mainwrapper2-float h3, #mainwrapper2-float h4 {
+	    font-size: 17px;
+	}
+
+	#mainwrapper2 p {
+	    font-size: 15px;
+	}
+
+	.page-six h1 {
+	    font-size: 18px;
+	}
+
+	.paragraphe p {
+	    font-size: 13px;
+	}
+	.page-six ul li img {
+	    width: 155px;
+	    height: 45px;
+	    margin: -20px 10px;
+	}
 }
